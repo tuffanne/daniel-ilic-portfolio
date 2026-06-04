@@ -190,44 +190,23 @@
 
     .about-photo {
       aspect-ratio: 3/4;
-      background: #2a2a2a;
       border-radius: 2px;
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      position: relative;
       overflow: hidden;
-    }
-
-    .about-photo::before {
-      content: '';
-      position: absolute;
-      inset: 0;
-      background: linear-gradient(135deg, #2a2020 0%, #1a1a1a 100%);
-    }
-
-    .about-photo-placeholder {
       position: relative;
-      z-index: 1;
-      text-align: center;
     }
 
-    .about-photo-initials {
-      font-family: 'Playfair Display', serif;
-      font-size: 5rem;
-      font-weight: 400;
-      color: var(--accent-lt);
-      opacity: 0.6;
+    .about-photo img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      object-position: center top;
       display: block;
-      line-height: 1;
+      filter: brightness(0.92) contrast(1.04);
+      transition: transform 0.6s ease;
     }
 
-    .about-photo-hint {
-      font-size: 0.72rem;
-      letter-spacing: 0.1em;
-      text-transform: uppercase;
-      color: #555;
-      margin-top: 1rem;
+    .about-photo:hover img {
+      transform: scale(1.03);
     }
 
     .about-content {}
@@ -899,10 +878,7 @@
   <div id="about" class="about-section">
     <div class="about-inner">
       <div class="about-photo fade-up">
-        <div class="about-photo-placeholder">
-          <span class="about-photo-initials">DI</span>
-          <p class="about-photo-hint">Add photo here</p>
-        </div>
+        <img src="Danielilic.png" alt="Daniel Ilic" />
       </div>
       <div class="about-content">
         <p class="about-label fade-up">About</p>
