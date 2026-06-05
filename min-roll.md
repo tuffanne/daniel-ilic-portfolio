@@ -2,7 +2,7 @@
 
 ## Vem jag är
 
-Jag är Daniel Ilic, grundare och kreativ ledare bakom verksamheten. Med över 20 års erfarenhet inom digital design och varumärkesupplevelse driver jag ett arbete som kombinerar strategi, kreativitet och berättande på global nivå.
+Jag är Daniel Ilic, grundare och kreativ ledare bakom verksamheten. Med över 25 års erfarenhet inom digital design och varumärkesupplevelse driver jag ett arbete som kombinerar strategi, kreativitet och berättande på global nivå.
 
 Jag har en internationell bakgrund med rötter i Stockholm, tid i Los Angeles och nuvarande bas i Menlo Park, CA. Under min tid på North Kingdom tog jag initiativet att starta upp och etablera byråns kontor i Los Angeles — från grunden. Det innebar allt från att bygga lokalt nätverk och rekrytera team till att säkra kunder och skapa en kreativ kultur på plats. LA-perioden formade min förståelse för berättande i stor skala och hur kreativitet, kultur och affärer möts i en av världens mest konkurrensutsatta kreativa marknader.
 
