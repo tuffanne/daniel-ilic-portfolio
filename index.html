@@ -658,48 +658,45 @@
       border-bottom: 1px solid var(--border);
     }
 
-    .video-grid {
-      display: grid;
-      grid-template-columns: repeat(3, 1fr);
-      gap: 2rem;
-    }
-
-    .video-item {}
-
     .video-wrapper {
-      position: relative;
-      padding-bottom: 56.25%;
-      height: 0;
-      overflow: hidden;
       border-radius: 2px;
+      overflow: hidden;
     }
 
-    .video-wrapper iframe {
-      position: absolute;
-      top: 0; left: 0;
-      width: 100%;
-      height: 100%;
-      border: none;
+    /* ── INSPO LINKS ── */
+    .inspo-section {
+      padding: 5rem 4rem;
+      border-top: 1px solid var(--border);
     }
 
-    .video-caption {
-      margin-top: 0.85rem;
-      font-size: 0.82rem;
+    .inspo-links {
+      display: flex;
+      flex-direction: column;
+      gap: 0;
+      margin-top: 1.5rem;
+      max-width: 640px;
+    }
+
+    .inspo-links a {
+      display: block;
+      padding: 1.1rem 0;
+      font-size: 0.95rem;
       color: var(--muted);
-      line-height: 1.5;
+      text-decoration: none;
+      border-bottom: 1px solid var(--border);
+      transition: color 0.2s, padding-left 0.2s;
     }
 
-    .video-caption strong {
-      color: var(--text);
-      font-weight: 600;
-    }
+    .inspo-links a:first-child { border-top: 1px solid var(--border); }
 
-    @media (max-width: 960px) {
-      .video-grid { grid-template-columns: 1fr; gap: 2.5rem; }
+    .inspo-links a:hover {
+      color: var(--accent);
+      padding-left: 0.5rem;
     }
 
     @media (max-width: 600px) {
-      .video-section { padding: 4rem 1.5rem; }
+      .video-section { padding: 0; }
+      .inspo-section { padding: 4rem 1.5rem; }
     }
 
     /* ── QUOTE ── */
@@ -1230,31 +1227,35 @@
     </div>
   </section>
 
-  <!-- INSPIRATION VIDEOS -->
+  <!-- NATIVE VIDEO -->
   <div class="video-section">
     <div class="section-inner">
-      <p class="section-label fade-up">Inspiration</p>
-      <h2 class="section-title fade-up">Talks that shaped how I think.</h2>
-      <p class="section-body fade-up" style="margin-bottom:3rem;">Three voices I keep coming back to — on creativity, leadership, and what it means to build something that lasts.</p>
-      <div class="video-grid">
-        <div class="video-item fade-up">
-          <div class="video-wrapper">
-            <iframe src="https://www.youtube.com/embed/g4IAa8wZlqU" title="Sir Ken Robinson" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-          </div>
-          <p class="video-caption"><strong>Sir Ken Robinson</strong> — Do schools kill creativity?</p>
-        </div>
-        <div class="video-item fade-up">
-          <div class="video-wrapper">
-            <iframe src="https://www.youtube.com/embed/LtprFhq8HZg" title="Nick Law" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-          </div>
-          <p class="video-caption"><strong>Nick Law</strong> — Creativity in the Age of Invention</p>
-        </div>
-        <div class="video-item fade-up">
-          <div class="video-wrapper">
-            <iframe src="https://www.youtube.com/embed/J0MZabpt-aY" title="Rem Koolhaas" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-          </div>
-          <p class="video-caption"><strong>Rem Koolhaas</strong> — Architecture and culture at scale</p>
-        </div>
+      <div class="video-wrapper fade-up">
+        <video
+          autoplay
+          muted
+          loop
+          playsinline
+          preload="auto"
+          style="width:100%;display:block;border-radius:2px;"
+        >
+          <source src="https://video.squarespace-cdn.com/content/v1/63bb366b8f7c476406948b40/9c0f4f7a-7996-4380-82c6-79f8dfca17ec/1926:1080" type="video/mp4" />
+          <source src="https://video.squarespace-cdn.com/content/v1/63bb366b8f7c476406948b40/9c0f4f7a-7996-4380-82c6-79f8dfca17ec/642:360" type="video/mp4" />
+        </video>
+      </div>
+    </div>
+  </div>
+
+  <!-- INSPIRATION LINKS -->
+  <div class="inspo-section">
+    <div class="section-inner">
+      <p class="section-label fade-up">Fundamentals / Beliefs / Inspiration</p>
+      <div class="inspo-links fade-up">
+        <a href="https://www.youtube.com/watch?v=g4IAa8wZlqU" target="_blank" rel="noopener">Sir Ken Robinson — Embrace kids' creativity</a>
+        <a href="https://www.youtube.com/watch?v=LtprFhq8HZg" target="_blank" rel="noopener">Nick Law — Creativity in the Age of Invention</a>
+        <a href="https://www.youtube.com/watch?v=J0MZabpt-aY" target="_blank" rel="noopener">Rem Koolhaas</a>
+        <a href="https://teenage.engineering" target="_blank" rel="noopener">Teenage Engineering</a>
+        <a href="https://the-talks.com/interview/alejandro-inarritu/" target="_blank" rel="noopener">Alejandro Iñárritu — There is no way you can stop</a>
       </div>
     </div>
   </div>
