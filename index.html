@@ -650,6 +650,35 @@
       line-height: 1.4;
     }
 
+    /* ── VIDEO ── */
+    .video-section {
+      padding: 7rem 4rem;
+      background: var(--card);
+      border-top: 1px solid var(--border);
+      border-bottom: 1px solid var(--border);
+    }
+
+    .video-wrapper {
+      position: relative;
+      padding-bottom: 56.25%;
+      height: 0;
+      overflow: hidden;
+      border-radius: 2px;
+      margin-top: 0;
+    }
+
+    .video-wrapper iframe {
+      position: absolute;
+      top: 0; left: 0;
+      width: 100%;
+      height: 100%;
+      border: none;
+    }
+
+    @media (max-width: 600px) {
+      .video-section { padding: 4rem 1.5rem; }
+    }
+
     /* ── QUOTE ── */
     .quote-section {
       padding: 8rem 4rem;
@@ -1177,6 +1206,23 @@
       </div>
     </div>
   </section>
+
+  <!-- INSPIRATION VIDEO -->
+  <div class="video-section">
+    <div class="section-inner">
+      <p class="section-label fade-up">Inspiration</p>
+      <h2 class="section-title fade-up">A talk that shaped how I think.</h2>
+      <p class="section-body fade-up" style="margin-bottom:2.5rem;">Sir Ken Robinson on why creativity must be taken as seriously as literacy — and what happens when we don't.</p>
+      <div class="video-wrapper fade-up">
+        <iframe
+          src="https://www.youtube.com/embed/g4IAa8wZlqU"
+          title="Sir Ken Robinson — Do schools kill creativity?"
+          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+          allowfullscreen>
+        </iframe>
+      </div>
+    </div>
+  </div>
 
   <!-- RECOGNITION -->
   <section class="rec-section">
