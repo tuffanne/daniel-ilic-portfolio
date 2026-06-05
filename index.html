@@ -658,13 +658,20 @@
       border-bottom: 1px solid var(--border);
     }
 
+    .video-grid {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 2rem;
+    }
+
+    .video-item {}
+
     .video-wrapper {
       position: relative;
       padding-bottom: 56.25%;
       height: 0;
       overflow: hidden;
       border-radius: 2px;
-      margin-top: 0;
     }
 
     .video-wrapper iframe {
@@ -673,6 +680,22 @@
       width: 100%;
       height: 100%;
       border: none;
+    }
+
+    .video-caption {
+      margin-top: 0.85rem;
+      font-size: 0.82rem;
+      color: var(--muted);
+      line-height: 1.5;
+    }
+
+    .video-caption strong {
+      color: var(--text);
+      font-weight: 600;
+    }
+
+    @media (max-width: 960px) {
+      .video-grid { grid-template-columns: 1fr; gap: 2.5rem; }
     }
 
     @media (max-width: 600px) {
@@ -1207,19 +1230,31 @@
     </div>
   </section>
 
-  <!-- INSPIRATION VIDEO -->
+  <!-- INSPIRATION VIDEOS -->
   <div class="video-section">
     <div class="section-inner">
       <p class="section-label fade-up">Inspiration</p>
-      <h2 class="section-title fade-up">A talk that shaped how I think.</h2>
-      <p class="section-body fade-up" style="margin-bottom:2.5rem;">Sir Ken Robinson on why creativity must be taken as seriously as literacy — and what happens when we don't.</p>
-      <div class="video-wrapper fade-up">
-        <iframe
-          src="https://www.youtube.com/embed/g4IAa8wZlqU"
-          title="Sir Ken Robinson — Do schools kill creativity?"
-          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-          allowfullscreen>
-        </iframe>
+      <h2 class="section-title fade-up">Talks that shaped how I think.</h2>
+      <p class="section-body fade-up" style="margin-bottom:3rem;">Three voices I keep coming back to — on creativity, leadership, and what it means to build something that lasts.</p>
+      <div class="video-grid">
+        <div class="video-item fade-up">
+          <div class="video-wrapper">
+            <iframe src="https://www.youtube.com/embed/g4IAa8wZlqU" title="Sir Ken Robinson" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+          </div>
+          <p class="video-caption"><strong>Sir Ken Robinson</strong> — Do schools kill creativity?</p>
+        </div>
+        <div class="video-item fade-up">
+          <div class="video-wrapper">
+            <iframe src="https://www.youtube.com/embed/LtprFhq8HZg" title="Nick Law" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+          </div>
+          <p class="video-caption"><strong>Nick Law</strong> — Creativity in the Age of Invention</p>
+        </div>
+        <div class="video-item fade-up">
+          <div class="video-wrapper">
+            <iframe src="https://www.youtube.com/embed/J0MZabpt-aY" title="Rem Koolhaas" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+          </div>
+          <p class="video-caption"><strong>Rem Koolhaas</strong> — Architecture and culture at scale</p>
+        </div>
       </div>
     </div>
   </div>
